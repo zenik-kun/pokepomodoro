@@ -9,7 +9,7 @@ module.exports = {
           DEFAULT: "#7fAC71",
           100: "#B7E973",
         },
-        red: "#F42C1C",
+        pokered: "#F42C1C",
         black: {
           DEFAULT: "#000",
           100: "#1E1E2D",

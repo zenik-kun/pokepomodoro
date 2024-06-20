@@ -10,11 +10,11 @@ export default function App() {
   return (
     <SafeAreaView className="h-full">
       <ScrollView contentContainerStyle={{ height:"100%" }}>
-        <View className="w-full justify-center items-center h-full px-4 bg-sky">
+        <View className="w-full justify-center items-center h-full px-5">
           <View className = "flex-row justify-center items-center gap-1">
             {/* <Image source={images.logoSmall} resizeMode='contain' className="w-[75px]"/> */}
-            <Text className="text-5xl text-gray-100 font-pokesolid py-5 pl-1">Poké</Text>
-            <Text className="text-5xl text-black font-pokehollow py-5 pr-1">Pomodoro</Text>
+            <Text className="text-5xl text-pokered font-pokesolid py-5 pl-1">Poké</Text>
+            <Text className="text-5xl text-gray-100 font-pokehollow py-5 pr-1">Pomodoro</Text>
           </View>
 
           
@@ -25,7 +25,7 @@ export default function App() {
             resizeMode='contain'
           />
 
-          <Text className="text-4xl mt-4 tracking-wider py-8 text-black text-center font-pokehollow">
+          <Text className="text-4xl mt-4 tracking-wider py-8 px-2 text-black text-center font-pokehollow">
               Focus and Catch 'em All!
           </Text>
           

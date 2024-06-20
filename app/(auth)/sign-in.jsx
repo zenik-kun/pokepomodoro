@@ -22,14 +22,15 @@ const SignIn = () => {
     <SafeAreaView className="h-full">
       <ScrollView>
         <View className="w-full justify-center min-h-[85vh] px-4 my-6">
-          <View className = "flex-row justify-center items-center">
-            <Image source={images.logoSmall} resizeMode='contain' className="w-[75px]"/>
-
-            <Text className="text-4xl text-black font-lsemibold">Notifi</Text>
+          <View className = "flex-row justify-center items-center gap-1">
+            {/* <Image source={images.logoSmall} resizeMode='contain' className="w-[75px]"/> */}
+            <Text className="text-5xl text-pokered font-pokesolid py-5 pl-1">Poké</Text>
+            <Text className="text-5xl text-black font-pokehollow py-5 pr-1">Pomodoro</Text>
+            
           </View>
-        
-          <Text className="text-2xl text-black font-lsemibold">Log In</Text>
 
+          <Text className="text-2xl text-black tracking-[2px] pb-4 text-center font-pokesolid">Log In</Text>
+          
           <FormField 
             title = "Email"
             placeholder = "Email"
@@ -56,10 +57,10 @@ const SignIn = () => {
           />
 
           <View className = "justify-center pt-5 flex-row gap-2">
-            <Text className = "text-lg text-black-100 font-lregular">
+            <Text className = "text-lg text-black-100 font-pokesolid tracking-[1px]">
               Don't have an account?
             </Text>
-            <Link href = "/sign-up" className = "text-lg text-primary font-lsemibold">Sign Up</Link>
+            <Link href = "/sign-up" className = "text-lg text-pokered font-pokesolid tracking-[1px]">Sign Up</Link>
           </View>
         </View>
       </ScrollView>

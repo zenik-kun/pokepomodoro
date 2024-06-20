@@ -8,13 +8,13 @@ const FormField = ({ title, value, placeholder, handleChangeText, otherStyles, .
 
   return (
     <View className={`space-y-2 ${otherStyles}`}>
-      <Text className="ml-1 text-base text-black font-lmedium">
+      <Text className="ml-1 text-base text-black font-pokesolid tracking-[1px]">
         {title}
       </Text>
 
-      <View className = "border-2 border-black-200 w-full h-16 px-4 bg-gray rounded-2xl focus:border-primary items-center flex-row">
+      <View className = "border-2 border-black-200 w-full h-16 px-4 bg-gray rounded-2xl focus:border-pokered items-center flex-row">
         <TextInput
-            className = "flex-1 text-black font-lsemibold text-base"
+            className = "flex-1 text-black font-pokesolid tracking-[2px] text-bold text-base"
             value = {value}
             placeholder = {placeholder}
             placeholderTextColor = "#7B7B8B"

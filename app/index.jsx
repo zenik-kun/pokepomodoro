@@ -10,33 +10,36 @@ export default function App() {
   return (
     <SafeAreaView className="h-full">
       <ScrollView contentContainerStyle={{ height:"100%" }}>
-        <View className="w-full justify-center items-center h-full px-4">
-          <View className = "flex-row justify-center items-center">
-            <Image source={images.logoSmall} resizeMode='contain' className="w-[75px]"/>
-            <Text className="text-5xl text-black font-lmedium py-1">Notifi</Text>
+        <View className="w-full justify-center items-center h-full px-4 bg-sky">
+          <View className = "flex-row justify-center items-center gap-1">
+            {/* <Image source={images.logoSmall} resizeMode='contain' className="w-[75px]"/> */}
+            <Text className="text-5xl text-gray-100 font-pokesolid py-5 pl-1">Poké</Text>
+            <Text className="text-5xl text-black font-pokehollow py-5 pr-1">Pomodoro</Text>
           </View>
 
+          
+
           <Image 
-            source={images.cards}
+            source={images.logoSmall}
             className="max-w-[300px] w-full h-[200px]"
             resizeMode='contain'
           />
 
-          <View className="mt-5">
-            <Text className="text-3xl text-black text-center font-lsemibold">
-              Remind yourself through <Text className="text-primary">Notifi</Text>
-            </Text>
-
-          </View>
+          <Text className="text-4xl mt-4 tracking-wider py-8 text-black text-center font-pokehollow">
+              Focus and Catch 'em All!
+          </Text>
+          
 
           <CustomButton 
             title = "Continue with Email"
             handlePress = {() => router.push('/sign-in')}
-            containerStyles="w-full mt-7"
+            containerStyles="w-full"
           />
+
+          <Link href="" className = "font-pokesolid p-4 text-xl tracking-widest">Skip</Link>
         </View>
       </ScrollView>
-      <StatusBar backgroundColor='#EAA0A2' style='light' />
+      <StatusBar backgroundColor='#F42C1C' style='light' />
     </SafeAreaView>
   );
 }

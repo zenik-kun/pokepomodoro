@@ -4,20 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#EAA0A2",
-        secondary: {
-          DEFAULT: "#CE3734",
-          100: "#A6292A",
-          200: "#691722",
+        sky: "#79CAF9",
+        grass: {
+          DEFAULT: "#7fAC71",
+          100: "#B7E973",
         },
-        tertiary: "#E09C2B",
+        red: "#F42C1C",
         black: {
           DEFAULT: "#000",
           100: "#1E1E2D",
           200: "#232533",
         },
         gray: {
-          100: "#CDCDE0",
+          100: "#58585A",
         },
       },
       fontFamily: {
@@ -31,6 +30,8 @@ module.exports = {
         lbold: ["Lexend-Bold", "sans-serif"],
         lextrabold: ["Lexend-ExtraBold", "sans-serif"],
         lblack: ["Lexend-Black", "sans-serif"],
+        pokehollow: ["Pokemon-Hollow", "sans-serif"],
+        pokesolid: ["Pokemon-Solid", "sans-serif"],
       },
     },
   },

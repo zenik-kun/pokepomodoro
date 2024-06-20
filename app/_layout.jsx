@@ -17,6 +17,8 @@ const RootLayout = () => {
     "Lexend-Regular": require("../assets/fonts/Lexend-Regular.ttf"),
     "Lexend-SemiBold": require("../assets/fonts/Lexend-SemiBold.ttf"),
     "Lexend-Thin": require("../assets/fonts/Lexend-Thin.ttf"),
+    "Pokemon-Hollow": require("../assets/fonts/Pokemon-Hollow.ttf"),
+    "Pokemon-Solid": require("../assets/fonts/Pokemon-Solid.ttf"),
   });
   
   useEffect(() => {

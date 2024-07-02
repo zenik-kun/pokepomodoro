@@ -2,11 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import { ScrollView, Text, View, Image, ImageBackground } from 'react-native';
 import * as NavigationBar from 'expo-navigation-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { images, music } from '../constants';
+import { images} from '../constants';
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import { Audio } from 'expo-av';
-import * as Font from 'expo-font';
 import PomodoroTimer from '../components/PomodoroTimer';
 
 export default function App() {
@@ -35,13 +34,12 @@ export default function App() {
           className = "h-full z-0"
         >
         <ScrollView contentContainerStyle={{ height:"100%" }}>
-          <Header className = "z-10"/>
           <PomodoroTimer />
+          <Header />
         </ScrollView>
       </ImageBackground>
       <StatusBar backgroundColor='#79C9FA' style='light' />
     </SafeAreaView>
   );
 }
-
 

@@ -7,7 +7,7 @@ module.exports = {
         sky: "#79C9fA",
         grass: {
           DEFAULT: "#7fAC71",
-          100: "#B7E973",
+          100: "#A4E75A",
         },
         pokered: "#F42C1C",
         black: {
@@ -20,19 +20,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        maharlika: ["Maharlika-Regular", "sans-serif"],
-        lthin: ["Lexend-Thin", "sans-serif"],
-        lextralight: ["Lexend-ExtraLight", "sans-serif"],
-        llight: ["Lexend-Light", "sans-serif"],
-        lregular: ["Lexend-Regular", "sans-serif"],
-        lmedium: ["Lexend-Medium", "sans-serif"],
-        lsemibold: ["Lexend-SemiBold", "sans-serif"],
-        lbold: ["Lexend-Bold", "sans-serif"],
-        lextrabold: ["Lexend-ExtraBold", "sans-serif"],
-        lblack: ["Lexend-Black", "sans-serif"],
-        pokehollow: ["Pokemon-Hollow", "sans-serif"],
-        pokesolid: ["Pokemon-Solid", "sans-serif"],
-        pokemon: ["pokemon", "sans-serif"],
+        pokemon: ["pokemon", "sans-serif"]
       },
     },
   },

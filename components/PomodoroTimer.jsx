@@ -3,8 +3,8 @@ import { Platform, Text, View, TextInput, Alert } from 'react-native';
 import Timer from './Timer';
 
 const PomodoroTimer = () => {
-  const [workTime, setWorkTime] = useState(25);
-  const [breakTime, setBreakTime] = useState(5);
+  const [workTime, setWorkTime] = useState(50);
+  const [breakTime, setBreakTime] = useState(10);
   const [intervalType, setIntervalType] = useState('Working');
 
   // handles completion of timer
@@ -17,9 +17,6 @@ const PomodoroTimer = () => {
     const time = parseInt(text, 10);
     if (time >= 0) {
       setWorkTime(time);
-    } else {
-      Alert.alert('Time invalid. Setting value to default. Please enter valid time');
-      setWorkTime(25);
     }
   };
 
@@ -28,9 +25,6 @@ const PomodoroTimer = () => {
     const time = parseInt(text, 10);
     if (time >= 0) {
       setBreakTime(time);
-    } else {
-      Alert.alert('Time invalid. Setting value to default. Please enter valid time');
-      setBreakTime(5);
     }
   };
 
@@ -42,25 +36,25 @@ const PomodoroTimer = () => {
   const time = handleTime();
 
   return (
-    <View className = "flex-1">   
+    <View className = "flex-1 mt-5">   
       <View className = "flex-row">
-        <View className = "flex-1 mb-2">
+        <View className = "flex-1">
           <Text className = "text-4xl font-pokemon text-center text-white tracking-wider px-5">Work Time</Text>
           <TextInput
-            className = "text-4xl text-center font-pokemon text-white tracking-wider px-5"
+            className = "text-4xl text-center font-pokemon text-white tracking-wider py-1 px-5 border-b-2 border-white mx-10"
             keyboardType="numeric"
             defaultValue={`${workTime}`}
-            placeholder="workTime in mins"
+            placeholder="Work time"
             onChangeText={handleWorkTime}
           />
         </View>
-        <View className = "flex-1 mb-2">
+        <View className = "flex-1">
           <Text className = "text-4xl font-pokemon text-center text-white tracking-wider px-5">Break Time</Text>
           <TextInput
-            className = "text-4xl font-pokemon text-center text-white tracking-wider px-5"
+            className = "text-4xl font-pokemon text-center text-white tracking-wider py-1 px-5 mx-10 border-b-2 border-white"
             keyboardType="numeric"
             defaultValue={`${breakTime}`}
-            placeholder="breakTime in mins"
+            placeholder="Break time"
             onChangeText={handleBreakTime}
           />
         </View>

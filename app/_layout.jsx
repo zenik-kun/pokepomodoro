@@ -7,18 +7,6 @@ SplashScreen.preventAutoHideAsync();
 
 const RootLayout = () => {
   const [fontsLoaded, error] = useFonts({
-    "Maharlika-Regular": require("../assets/fonts/Maharlika-Regular.ttf"),
-    "Lexend-Black": require("../assets/fonts/Lexend-Black.ttf"),
-    "Lexend-Bold": require("../assets/fonts/Lexend-Bold.ttf"),
-    "Lexend-ExtraBold": require("../assets/fonts/Lexend-ExtraBold.ttf"),
-    "Lexend-ExtraLight": require("../assets/fonts/Lexend-ExtraLight.ttf"),
-    "Lexend-Light": require("../assets/fonts/Lexend-Light.ttf"),
-    "Lexend-Medium": require("../assets/fonts/Lexend-Medium.ttf"),
-    "Lexend-Regular": require("../assets/fonts/Lexend-Regular.ttf"),
-    "Lexend-SemiBold": require("../assets/fonts/Lexend-SemiBold.ttf"),
-    "Lexend-Thin": require("../assets/fonts/Lexend-Thin.ttf"),
-    "Pokemon-Hollow": require("../assets/fonts/Pokemon-Hollow.ttf"),
-    "Pokemon-Solid": require("../assets/fonts/Pokemon-Solid.ttf"),
     "pokemon": require("../assets/fonts/pokemon.ttf")
   });
 

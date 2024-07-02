@@ -30,5 +30,8 @@
       "expo-font"
 
     ]
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id" : "ca-app-pub-7511419818982153~8923362113"
   }
 }

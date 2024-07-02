@@ -19,7 +19,9 @@ const RootLayout = () => {
     "Lexend-Thin": require("../assets/fonts/Lexend-Thin.ttf"),
     "Pokemon-Hollow": require("../assets/fonts/Pokemon-Hollow.ttf"),
     "Pokemon-Solid": require("../assets/fonts/Pokemon-Solid.ttf"),
+    "pokemon": require("../assets/fonts/pokemon.ttf")
   });
+
   
   useEffect(() => {
     if (error) throw error;

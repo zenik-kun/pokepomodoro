@@ -32,6 +32,7 @@ module.exports = {
         lblack: ["Lexend-Black", "sans-serif"],
         pokehollow: ["Pokemon-Hollow", "sans-serif"],
         pokesolid: ["Pokemon-Solid", "sans-serif"],
+        pokemon: ["pokemon", "sans-serif"],
       },
     },
   },

@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <View className = "items-center">
-        <Text className = "text-3xl">PokéPom</Text>
+        <Text className = "text-7xl text-white font-pokemon">PokéPomo</Text>
     </View>
   )
 }

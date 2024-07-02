@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        sky: "#79CAF9",
+        sky: "#79C9fA",
         grass: {
           DEFAULT: "#7fAC71",
           100: "#B7E973",

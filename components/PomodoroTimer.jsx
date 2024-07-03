@@ -6,10 +6,11 @@ const PomodoroTimer = () => {
   const [workTime, setWorkTime] = useState(50);
   const [breakTime, setBreakTime] = useState(10);
   const [intervalType, setIntervalType] = useState('Working');
+  const [isCompleted, setIsCompleted] = useState(false)
 
   // handles completion of timer
   const handleTimerCompleted = () => {
-    setIntervalType((prevType) => (prevType === 'Working' ? 'Break' : 'Working'));
+    setIsCompleted(true)
   };
 
   // gets triggered on change of work time text
@@ -59,7 +60,7 @@ const PomodoroTimer = () => {
           />
         </View>
       </View>
-      <Timer intervalType={intervalType} Oncomplete={handleTimerCompleted} period={time} />
+      <Timer intervalType={intervalType} Oncomplete={handleTimerCompleted} period={time} isCompleted={isCompleted} setIsCompleted={setIsCompleted} setIntervalType={setIntervalType}/>
     </View>
   );
 };

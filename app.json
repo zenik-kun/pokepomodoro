@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "PokePomodoro",
-    "slug": "pokepomodoro",
-    "scheme": "your-app-scheme",
+    "name": "PokéPomo",
+    "slug": "PokePomo",
+    "scheme": "pokepomo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.zenik.PokePomo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -28,10 +33,14 @@
       "expo-router",
       "expo-av",
       "expo-font"
-
-    ]
-  },
-  "react-native-google-mobile-ads": {
-    "android_app_id" : "ca-app-pub-7511419818982153~8923362113"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "0db91a68-106a-4142-8d32-3e10265224f6"
+      }
+    }
   }
 }

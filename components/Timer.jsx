@@ -4,16 +4,14 @@ import TimerHeader from './TimerHeader';
 import TimerDisplay from './TimerDisplay';
 import TimerButtons from './TimerButtons';
 
-const Timer = ({ period, intervalType, Oncomplete }) => {
+const Timer = ({ period, intervalType, Oncomplete, isCompleted, setIsCompleted, setIntervalType }) => {
   const [running, setRunning] = useState(false);
   const [time, setTime] = useState(period * 60);
 
   useEffect(() => {
     setRunning(false);
     setTime(period * 60);
-    if (running && time === 0) {
-      handlePlay();
-    }
+    setIsCompleted(false)
   }, [period]);
 
   useEffect(() => {
@@ -24,8 +22,17 @@ const Timer = ({ period, intervalType, Oncomplete }) => {
       }, 1000);
     } else if (running && time === 0) {
       clearInterval(timerId);
-      Vibration.vibrate([500, 500, 500]);
+      Vibration.vibrate([1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500, 1500]);
       Oncomplete();
+      setRunning(false);
+
+      // Transition to the next interval type
+      if (intervalType === 'Working') {
+        setIntervalType('Break');
+      } else {
+        setIntervalType('Working');
+      }
+      setTime(period * 60);
     } else {
       clearInterval(timerId);
     }
@@ -33,6 +40,10 @@ const Timer = ({ period, intervalType, Oncomplete }) => {
   }, [running, time]);
 
   const handlePlay = () => {
+    if (isCompleted) {
+      // Timer is complete and we are transitioning to the next interval
+      setIsCompleted(false);
+    }
     setRunning(true);
   };
 
